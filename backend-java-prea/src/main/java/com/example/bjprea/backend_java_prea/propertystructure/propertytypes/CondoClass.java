@@ -1,4 +1,7 @@
 package com.example.bjprea.backend_java_prea.propertystructure.propertytypes;
 
-public class CondoClass {
+import com.example.bjprea.backend_java_prea.propertystructure.PropertyPrimaryClass;
+
+public class CondoClass extends PropertyPrimaryClass {
+
 }

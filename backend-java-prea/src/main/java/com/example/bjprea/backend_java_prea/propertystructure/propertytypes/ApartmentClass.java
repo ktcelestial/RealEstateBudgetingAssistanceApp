@@ -1,4 +1,8 @@
 package com.example.bjprea.backend_java_prea.propertystructure.propertytypes;
 
-public class ApartmentClass {
+
+import com.example.bjprea.backend_java_prea.propertystructure.PropertyPrimaryClass;
+
+public class ApartmentClass extends PropertyPrimaryClass {
+
 }

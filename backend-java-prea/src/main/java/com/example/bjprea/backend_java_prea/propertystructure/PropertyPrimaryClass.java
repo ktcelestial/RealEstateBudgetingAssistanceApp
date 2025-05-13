@@ -6,7 +6,7 @@ public class PropertyPrimaryClass {
     float landprice;
     float MRTG_principal;
     int MRTG_YRterm;
-    float MRTG_interest;
+    float MRTG_interest; //
     float MRTG_totalintaxes;
     float APR;
 

@@ -18,7 +18,7 @@ public class HouseClass extends PropertyPrimaryClass {
     }
 
     @Override
-    public void setRequirements() {
+    public void setRequirements() { // Polymorphism
         System.out.println("Loading House property attributes and statistics");
 
     }

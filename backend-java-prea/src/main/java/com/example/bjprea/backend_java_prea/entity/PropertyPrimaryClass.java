@@ -1,4 +1,4 @@
-package com.example.bjprea.backend_java_prea.propertystructure;
+package com.example.bjprea.backend_java_prea.entity;
 
 public class PropertyPrimaryClass {
 

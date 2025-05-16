@@ -1,6 +1,6 @@
-package com.example.bjprea.backend_java_prea.userstructure;
+package com.example.bjprea.backend_java_prea.entity.userstructure;
 
-import com.example.bjprea.backend_java_prea.userstructure.useraccount.CreateAccountPrimary;
+import com.example.bjprea.backend_java_prea.entity.userstructure.useraccount.CreateAccountPrimary;
 
 class UserPrimaryClass implements IUserPrimary {
 

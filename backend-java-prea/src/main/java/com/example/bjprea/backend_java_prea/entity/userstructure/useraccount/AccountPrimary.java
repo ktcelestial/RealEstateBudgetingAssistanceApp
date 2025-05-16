@@ -1,4 +1,4 @@
-package com.example.bjprea.backend_java_prea.userstructure.useraccount;
+package com.example.bjprea.backend_java_prea.entity.userstructure.useraccount;
 
 class AccountPrimary {
     // both login and creates, needs to present username and password

@@ -1,4 +1,4 @@
-package com.example.bjprea.backend_java_prea.userstructure.useraccount;
+package com.example.bjprea.backend_java_prea.entity.userstructure.useraccount;
 
 public class LogInPrimary extends AccountPrimary {
     // user needs to log in to a pre-existing account

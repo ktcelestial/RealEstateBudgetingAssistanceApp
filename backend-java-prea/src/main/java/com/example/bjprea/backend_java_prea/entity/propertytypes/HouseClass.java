@@ -1,6 +1,6 @@
-package com.example.bjprea.backend_java_prea.propertystructure.propertytypes;
+package com.example.bjprea.backend_java_prea.entity.propertytypes;
 
-import com.example.bjprea.backend_java_prea.propertystructure.PropertyPrimaryClass;
+import com.example.bjprea.backend_java_prea.entity.PropertyPrimaryClass;
 
 public class HouseClass extends PropertyPrimaryClass {
 

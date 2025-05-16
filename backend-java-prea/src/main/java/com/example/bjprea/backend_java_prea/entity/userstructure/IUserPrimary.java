@@ -1,4 +1,4 @@
-package com.example.bjprea.backend_java_prea.userstructure;
+package com.example.bjprea.backend_java_prea.entity.userstructure;
 
 public interface IUserPrimary {
     void loginNecessary(int ans);

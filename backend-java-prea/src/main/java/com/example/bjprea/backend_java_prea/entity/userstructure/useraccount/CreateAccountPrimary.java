@@ -1,4 +1,4 @@
-package com.example.bjprea.backend_java_prea.userstructure.useraccount;
+package com.example.bjprea.backend_java_prea.entity.userstructure.useraccount;
 
 public class CreateAccountPrimary extends AccountPrimary
 {

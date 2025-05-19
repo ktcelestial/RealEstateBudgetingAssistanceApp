@@ -5,12 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.apache.catalina.User;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "UserAccts")
 public class UserAccEntity
@@ -35,9 +32,51 @@ public class UserAccEntity
     private String DOB;
 
     @Column(name = "ac_username", nullable = false, unique = true)
-    private String ac_username;
+    private String acusername;
     @Column(name = "ac_password")
-    private String ac_password;
+    private String acpassword;
+
+    // No Args
+    public UserAccEntity() {}
+
+    // All Args
+    public UserAccEntity(Long ID, String FN, String LN, String EMAIL, String DOB, String ACUN, String ACPW) {
+        this.id = ID;
+        this.firstName = FN;
+        this.lastName = LN;
+        this.email = EMAIL;
+        this.DOB = DOB;
+        this.acusername = ACUN;
+        this.acpassword = ACPW;
+    }
 
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getDOB() {
+        return DOB;
+    }
+
+    public String getAcusername() {
+        return acusername;
+    }
+
+    public String getAcpassword() {
+        return acpassword;
+    }
 }

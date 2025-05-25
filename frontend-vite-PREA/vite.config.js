@@ -9,5 +9,8 @@ export default defineConfig({
         Server post configurations area
   */
 
+        server:{
+          port: 3000
+        }
 
 })

@@ -1,0 +1,37 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    background-image: url('../assets/icons/new ktb overview town.jpg');
+    background-position: 20%;
+    background-size: 100%;
+    padding: 15px 7%;
+
+}
+
+.logolight {
+    width: 10%;
+    padding: 1%;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+ul {
+    flex: 1;
+    vertical-align: middle;
+    padding-right: 15%;
+    padding-top: 1.5%;
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 30px;
+    vertical-align: center;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}

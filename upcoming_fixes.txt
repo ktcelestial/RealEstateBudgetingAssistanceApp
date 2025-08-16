@@ -1,0 +1,4 @@
+ - consider connecting Amazon s3/MySQL for website storage, 
+ to separate from local storage (when programming across multiple devices)
+ - connect Home, About, etc. to an endpoint for REST API to be introduced
+ - being integrating more main page websites for public eyes

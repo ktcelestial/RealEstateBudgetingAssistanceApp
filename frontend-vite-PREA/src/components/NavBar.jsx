@@ -8,6 +8,8 @@ import image_town from '../assets/icons/new ktb overview town.jpg'
 const NavBar = () => {
     return (
         <div className="navbar">
+            <div class="container flex lead">
+            
             <img src={logo_light} alt="" className="logolight"/>
 
             <ul>
@@ -17,7 +19,8 @@ const NavBar = () => {
                 <li>Log In</li>
                 <li>Sign Up</li>
             </ul>
-
+            
+            </div>
         </div>
     )
 

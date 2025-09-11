@@ -1,5 +1,6 @@
 import React from 'react'
 // import { propertiesData } from './data/properties' (example later)
+import "./ListPropertiesComponent.css"
 
 const ListPropertiesComponent = () => {
     // Address Format: [ApptNum] [StreetDoorNum] [StreetName + StreetFullAbrv], [City/Town], [State] [ZipCode] 
@@ -9,7 +10,7 @@ const ListPropertiesComponent = () => {
     const examplePropertiesTest = [
         {
             "id": 1,
-            "propertyAddress": "8 Luna Road, Austin, TX 70000",
+            "propertyAddress": "88 Revert Road, Austin, TX 89998",
             "propertyType": "House",
             "propertySubType": "Single Family",
             "PPTonSale": "Yes",
@@ -64,10 +65,12 @@ const ListPropertiesComponent = () => {
 
 
     */
-    <div>
+
+  
+    <div class="tableFixHead">
       <h2> Properties Currently Trending </h2>
-      <table className="table table-striped table-bordered">
-        <thead>
+      <table class="table table-striped table-bordered">
+        <thead class="">
           <tr>
             <th>Property Address</th>
             <th>Property Type</th>
@@ -75,13 +78,7 @@ const ListPropertiesComponent = () => {
             <th>Property On Sale</th>
             <th>Property Availability</th>
             <th>Property Price</th>
-            <th>Property Beds</th>
-            <th>Property Baths</th>
-            <th>Property Estimate /mo</th>
-            <th>Property Size /sqft</th>
-            <th>Property Lot /sqft</th>
-            <th>Property Year Built</th>
-            <th>Property Price /sqft</th>
+            
           </tr>
         </thead>
         <tbody>
@@ -93,18 +90,13 @@ const ListPropertiesComponent = () => {
             <td>{property.PPTonSale}</td>
             <td>{property.PPTavailType}</td>
             <td>{"$"+property.PPTprice}</td>
-            <td>{property.PPTBeds}</td>
-            <td>{property.PPTBath}</td>
-            <td>{"$"+property.PPTEstimatePerMonth}</td>
-            <td>{property.PPTsqftSize}</td>
-            <td>{property.PPTsqftLot}</td>
-            <td>{property.PPTYearBuilt}</td>
-            <td>{"$"+property.PricePerSqft}</td>
+            
           </tr>)
         }
         </tbody>
       </table>
     </div>
+      
   )
 }
 

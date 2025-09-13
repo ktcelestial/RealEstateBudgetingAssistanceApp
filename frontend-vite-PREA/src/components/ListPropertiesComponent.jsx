@@ -66,7 +66,9 @@ const ListPropertiesComponent = () => {
 
     */
 
-  
+    
+
+
     <div class="tableFixHead">
       <h2> Properties Currently Trending </h2>
       <table class="table table-striped table-bordered">

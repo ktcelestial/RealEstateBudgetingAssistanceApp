@@ -1,20 +1,3 @@
-/*
-  Order of HTTP Request testing
-  (1) Open Postman to test endpoints
-  (2) Start up server for database listening (dir> node app.js)
-    - "Database Connected"
-  - 
-*/
-
-// app setup essentials
-const express = require("express");
-require("dotenv").config();
-const { Sequelize, DataTypes } = require("sequelize");
-
-// app exclusive
-const app = express();
-const port = process.env.PORT || 3000; // custom port, 3000 is fall back port
-app.use(express.json());
 
 // directories and dependencies
 import NavBar from './components/NavBar'

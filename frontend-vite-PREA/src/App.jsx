@@ -13,65 +13,6 @@ import './App.css'
 import React, { Component } from 'react'
 import axios from 'axios'
 
-// sequelize initialization 
-const sequelize = new Sequelize(process.env.PREA_DB_URL, {
-  // what does Sequelize need?
-  dialect: "sqlite",
-  storage: "./database.sqlite",
-  logging: false
-});
-
-// .sync() is a Promise, must handle.
-sequelize
-  .sync()
-  .then(() => {
-    console.log("Error on sequelize sync function."); 
-  })
-    .catch((err) => {
-      console.log(err)
-    });
-
-const post = sequelize.define("post", {
-  title: {
-    type:DataTypes.STRING,
-    allowNull: false,
-  }, 
-  content: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-});
-
-// express based - get
-app.get("/", (req, res) => {
-  res.send("app.get() function initialized!");
-});
-
-// express based - post
-app.post("/create-post", async (req, res) => {
-  const {title , content } =  req.body;
-  try {
-    const newPost = await post.create( {title, content });
-    res.json(newPost);
-  } catch (err) {
-    console.log(err);
-  }
-});
-
-app.listen(port, () => {
-  console.log('Project App listening...');
-});
-
-app.get("/get-posts", async (req, res) => {
-  try {
-    const allPosts = await post.findAll();
-    res.json(allPosts);
-  } catch (err) {
-    console.log(err);
-  }
-})
-
-
 // BEFORE ===================
 
 const api = axios.create({
@@ -130,15 +71,6 @@ class App extends Component {
     this.getProperties();
   }
 
-  deleteProperty = async () => {
-    api.delete(`/${id}`)
-    this.getProperties();
-  }
-
-  updateProperty = async () => {
-    api.patch(`/${id}`, { propertyType: Condo })
-    this.getProperties();
-  }
 
   render() {
     return(
